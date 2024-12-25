@@ -1,4 +1,9 @@
-### SYNCHRONOUS-UP-COUNTER
+
+NAME: JAISREE B
+
+REGISTER NO:24002225
+
+**EXPERIMENT 7 SYNCHRONOUS UP COUNTER**
 
 **AIM:**
 
@@ -10,7 +15,7 @@ Quartus prime
 
 **THEORY**
 
-**4 bit synchronous UP Counter**
+**4 BIT SYNCHRONOUS UP COUNTER**
 
 If we enable each J-K flip-flop to toggle based on whether or not all preceding flip-flop outputs (Q) are “high,” we can obtain the same counting sequence as the asynchronous circuit without the ripple effect, since each flip-flop in this circuit will be clocked at exactly the same time:
 
@@ -26,21 +31,36 @@ Since the first (LSB) flip-flop needs to toggle at every clock pulse, its J and 
 The next flip-flop need only “recognize” that the first flip-flop’s Q output is high to be made ready to toggle, so no AND gate is needed.
 However, the remaining flip-flops should be made ready to toggle only when all lower-order output bits are “high,” thus the need for AND gates.
 
-**Procedure**
+**PROCEDURE**
 
-/* write all the steps invloved */
+1. Initialize the shift register to a known state (e.g., all zeros).
+
+2. Input a bit serially into the shift register.
+
+3. Shift the contents of the register to one position to the right (or left).
+
+4. Output the shifted bit from the last stage of the register.
+
+5. Repeat steps 2-4 for each bit you want to input and shift.**
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. 
+![Screenshot (82)](https://github.com/user-attachments/assets/be7081b6-fdf1-4796-b4e5-2cc9a8524751)
 
-Developed by: RegisterNumber:
-*/
 
 **RTL LOGIC UP COUNTER**
 
+![Screenshot (83)](https://github.com/user-attachments/assets/ed330874-c39f-43fe-90fa-a5ff11b39de1)
+
+
 **TIMING DIAGRAM FOR IP COUNTER**
+
+![Screenshot (84)](https://github.com/user-attachments/assets/5b3d55bd-f02b-4735-ab81-a6391475352f)
 
 **TRUTH TABLE**
 
+![Screenshot (85)](https://github.com/user-attachments/assets/8d3be2a8-b71e-40fa-91ae-44cc79a092ed)
+
 **RESULTS**
+
+Hence a 4 bit synchronous up counter is implemented successfully 
